@@ -1,0 +1,11 @@
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Core\bin\Debug\net9.0\EcoWaste.Core.deps.json
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Core\bin\Debug\net9.0\EcoWaste.Core.dll
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Core\bin\Debug\net9.0\EcoWaste.Core.pdb
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Core\obj\Debug\net9.0\EcoWaste.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Core\obj\Debug\net9.0\EcoWaste.Core.AssemblyInfoInputs.cache
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Core\obj\Debug\net9.0\EcoWaste.Core.AssemblyInfo.cs
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Core\obj\Debug\net9.0\EcoWaste.Core.csproj.CoreCompileInputs.cache
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Core\obj\Debug\net9.0\EcoWaste.Core.dll
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Core\obj\Debug\net9.0\refint\EcoWaste.Core.dll
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Core\obj\Debug\net9.0\EcoWaste.Core.pdb
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Core\obj\Debug\net9.0\ref\EcoWaste.Core.dll

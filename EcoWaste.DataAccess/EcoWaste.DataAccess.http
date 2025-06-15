@@ -1,0 +1,6 @@
+@EcoWaste.DataAccess_HostAddress = http://localhost:5215
+
+GET {{EcoWaste.DataAccess_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

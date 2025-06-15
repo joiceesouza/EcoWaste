@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "wYTij6NODrs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Joice Fernanda\\Documents\\FIAP\\EcoWaste\\EcoWaste.Tests\\EcoWaste.Tests.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Joice Fernanda\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.6\\microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
+    "C:\\Users\\Joice Fernanda\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
