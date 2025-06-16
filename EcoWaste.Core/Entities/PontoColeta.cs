@@ -8,6 +8,7 @@ namespace EcoWaste.Core.Entities
         public string Cidade { get; set; } = string.Empty;
 
         public ICollection<Residuo> TiposResiduosAceitos { get; set; }
+        public ICollection<PontoColetaResiduo> PontoColetaResiduos { get; set; }
 
     }
 }

@@ -14,3 +14,5 @@ C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\obj\Debug\ne
 C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\obj\Debug\net9.0\refint\EcoWaste.DataAccess.dll
 C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\obj\Debug\net9.0\EcoWaste.DataAccess.pdb
 C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\obj\Debug\net9.0\ref\EcoWaste.DataAccess.dll
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\bin\Debug\net9.0\EcoWaste.DataAccess.runtimeconfig.json
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\obj\Debug\net9.0\EcoWaste.DataAccess.genruntimeconfig.cache
