@@ -1,6 +1,0 @@
-@EcoWaste.Core_HostAddress = http://localhost:5080
-
-GET {{EcoWaste.Core_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

@@ -18,12 +18,13 @@ builder.Services.AddSwaggerGen(c =>
 
 // 2. Configuração do banco de dados
 builder.Services.AddDbContext<EcoTrackDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))); // Substitua por Oracle se necessário
+    options.UseOracle(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // 3. Injeção de dependências
 builder.Services.AddScoped<IColetaService, ColetaService>();
 builder.Services.AddScoped<IResiduoService, ResiduoService>();
 builder.Services.AddScoped<IPontoColetaService, PontoColetaService>();
+
 
 var app = builder.Build();
 

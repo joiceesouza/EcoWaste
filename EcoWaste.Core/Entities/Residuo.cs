@@ -6,5 +6,6 @@ namespace EcoWaste.Core.Entities
         public string Nome { get; set; }
         public string Tipo { get; set; } = string.Empty;
         public ICollection<Coleta>? Coletas { get; set; }
+        public ICollection<PontoColetaResiduo> PontoColetaResiduos { get; set; }
     }
 }
