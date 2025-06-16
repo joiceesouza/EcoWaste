@@ -1,5 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using EcoWaste.Core.Entities;
 using EcoWaste.DataAccess;
+using EcoWaste.Core.DTOs;
 
 public class ResiduoService : IResiduoService
 {

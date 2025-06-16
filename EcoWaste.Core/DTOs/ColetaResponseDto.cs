@@ -1,8 +1,11 @@
-namespace EcoWaste.Core.DTOs
+namespace EcoWaste.Core.DTOs;
+
+public class ColetaResponseDto
 {
-    public class ColetaResponseDto
-    {
-        public int Id { get; set; }
-        public string Descricao { get; set; }
-    }
+    public string Descricao { get; set; } = string.Empty;
+
+    public string ResiduoTipo { get; set; } = string.Empty;
+    public double QuantidadeKg { get; set; }
+    public DateTime DataHora { get; set; }
+    public int Id { get; set; }
 }

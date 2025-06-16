@@ -4,5 +4,7 @@ namespace EcoWaste.Core.Entities
     {
         public int Id { get; set; }
         public string Nome { get; set; }
+        public string Tipo { get; set; } = string.Empty;
+        public ICollection<Coleta>? Coletas { get; set; }
     }
 }

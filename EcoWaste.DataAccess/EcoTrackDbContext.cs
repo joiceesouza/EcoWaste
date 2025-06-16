@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using EcoWaste.Core.Entities;
+using EcoWaste.Core.Entities; 
 
 namespace EcoWaste.DataAccess
 {

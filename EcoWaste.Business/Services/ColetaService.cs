@@ -1,6 +1,8 @@
+using Microsoft.EntityFrameworkCore;
 using EcoWaste.Core.Entities;
 using EcoWaste.Core.DTOs;
 using EcoWaste.DataAccess;
+using EcoWaste.Business.Interfaces;
 
 public class ColetaService : IColetaService
 {

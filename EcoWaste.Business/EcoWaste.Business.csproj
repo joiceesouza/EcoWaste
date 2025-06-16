@@ -1,18 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\EcoWaste.Core\EcoWaste.Core.csproj" />
+    <ProjectReference Include="..\EcoWaste.DataAccess\EcoWaste.DataAccess.csproj" />
+  </ItemGroup>
+
+
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.6" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\EcoWaste.DataAccess\EcoWaste.DataAccess.csproj" />
-    <ProjectReference Include="..\EcoWaste.Core\EcoWaste.Core.csproj" />
-  </ItemGroup>
 
 </Project>

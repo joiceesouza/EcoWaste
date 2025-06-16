@@ -1,5 +1,16 @@
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\bin\Debug\net9.0\EcoWaste.DataAccess.deps.json
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\bin\Debug\net9.0\EcoWaste.DataAccess.dll
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\bin\Debug\net9.0\EcoWaste.DataAccess.pdb
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\bin\Debug\net9.0\EcoWaste.Core.dll
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\bin\Debug\net9.0\EcoWaste.Core.pdb
 C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\obj\Debug\net9.0\EcoWaste.DataAccess.csproj.AssemblyReference.cache
 C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\obj\Debug\net9.0\EcoWaste.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\obj\Debug\net9.0\EcoWaste.DataAccess.AssemblyInfoInputs.cache
 C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\obj\Debug\net9.0\EcoWaste.DataAccess.AssemblyInfo.cs
 C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\obj\Debug\net9.0\EcoWaste.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\obj\Debug\net9.0\EcoWaste.DataAccess.sourcelink.json
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\obj\Debug\net9.0\EcoWaste.9E7AA8DD.Up2Date
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\obj\Debug\net9.0\EcoWaste.DataAccess.dll
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\obj\Debug\net9.0\refint\EcoWaste.DataAccess.dll
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\obj\Debug\net9.0\EcoWaste.DataAccess.pdb
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.DataAccess\obj\Debug\net9.0\ref\EcoWaste.DataAccess.dll

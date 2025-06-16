@@ -1,5 +1,5 @@
 using EcoWaste.Business.Interfaces;
-using EcoWaste.Api.DTOs;
+using EcoWaste.Core.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcoWaste.Api.Controllers
@@ -21,7 +21,6 @@ namespace EcoWaste.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Registrar([FromBody] CreateColetaDto dto)
         {
-            // Mock de autenticação: em um sistema real, você pegaria o ID do usuário autenticado.
             int usuarioId = 1;
 
             var coleta = await _coletaService.RegistrarAsync(dto, usuarioId);

@@ -988,6 +988,16 @@
             "rid": "win"
           }
         }
+      },
+      "EcoWaste.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/EcoWaste.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcoWaste.Core.dll": {}
+        }
       }
     }
   },
@@ -2738,10 +2748,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "EcoWaste.Core/1.0.0": {
+      "type": "project",
+      "path": "../EcoWaste.Core/EcoWaste.Core.csproj",
+      "msbuildProject": "../EcoWaste.Core/EcoWaste.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "EcoWaste.Core >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.6"
     ]
@@ -2770,7 +2786,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Joice Fernanda\\Documents\\FIAP\\EcoWaste\\EcoWaste.Core\\EcoWaste.Core.csproj": {
+              "projectPath": "C:\\Users\\Joice Fernanda\\Documents\\FIAP\\EcoWaste\\EcoWaste.Core\\EcoWaste.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
