@@ -1,0 +1,23 @@
+# Build artifacts
+bin/
+obj/
+publish/
+
+# VSCode & JetBrains files
+.vs/
+.idea/
+.vscode/
+
+# .NET Core & Visual Studio temporary files
+*.user
+*.swp
+*.db
+*.log
+
+# Ignore Docker files except docker-compose and Dockerfile itself
+Dockerfile*
+docker-compose.yml
+
+# GitHub and other environment-specific files
+.git/
+.github/

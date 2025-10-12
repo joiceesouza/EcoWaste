@@ -1,20 +1,19 @@
 # Etapa 1: Build
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
-# Copia os arquivos de projeto e restaura as dependências
+# Copia os arquivos de solução e projetos para restaurar as dependências
 COPY *.sln .
 COPY EcoWaste.Api/*.csproj ./EcoWaste.Api/
 COPY EcoWaste.Business/*.csproj ./EcoWaste.Business/
 COPY EcoWaste.Core/*.csproj ./EcoWaste.Core/
 COPY EcoWaste.DataAccess/*.csproj ./EcoWaste.DataAccess/
 
-# Criação de diretórios (opcional, garante que existam)
+# Cria as pastas necessárias e restaura dependências
 RUN mkdir -p EcoWaste.Api EcoWaste.Business EcoWaste.Core EcoWaste.DataAccess
+RUN dotnet restore EcoWaste.Api/EcoWaste.Api.csproj
 
-RUN dotnet restore
-
-# Copia o restante dos arquivos
+# Copia o restante dos arquivos do projeto
 COPY . .
 
 # Publica a aplicação
@@ -22,7 +21,7 @@ WORKDIR /src/EcoWaste.Api
 RUN dotnet publish -c Release -o /app/publish
 
 # Etapa 2: Runtime
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS final
 WORKDIR /app
 COPY --from=build /app/publish .
 
