@@ -1,0 +1,8 @@
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Tests\bin\Debug\net9.0\.msCoverageSourceRootsMapping_EcoWaste.Tests
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Tests\bin\Debug\net9.0\CoverletSourceRootsMapping_EcoWaste.Tests
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Tests\obj\Debug\net9.0\EcoWaste.Tests.csproj.AssemblyReference.cache
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Tests\obj\Debug\net9.0\EcoWaste.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Tests\obj\Debug\net9.0\EcoWaste.Tests.AssemblyInfoInputs.cache
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Tests\obj\Debug\net9.0\EcoWaste.Tests.AssemblyInfo.cs
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Tests\obj\Debug\net9.0\EcoWaste.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Joice Fernanda\Documents\FIAP\EcoWaste\EcoWaste.Tests\obj\Debug\net9.0\EcoWaste.Tests.sourcelink.json

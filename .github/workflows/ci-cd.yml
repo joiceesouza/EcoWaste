@@ -1,0 +1,41 @@
+name: EcoWaste CI/CD
+
+on:
+  push:
+    branches: [ feature-joice-ecowaste ]
+  pull_request:
+    branches: [ feature-joice-ecowaste ]
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configurar .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restaurar dependências
+        run: dotnet restore
+
+      - name: Compilar solução
+        run: dotnet build --no-restore --configuration Release
+
+      - name: Executar testes
+        run: dotnet test --no-build --configuration Release --verbosity normal
+
+      - name: Publicar aplicação
+        run: dotnet publish EcoWaste.Api/EcoWaste.Api.csproj -c Release -o ./publish
+
+      - name: Build da imagem Docker
+        run: docker build -t ecowaste-api .
+
+      - name: Simular deploy (Staging)
+        run: echo "Deploy de staging realizado com sucesso 🚀"
+
+      - name: Simular deploy (Produção)
+        run: echo "Deploy de produção realizado com sucesso 🌎"

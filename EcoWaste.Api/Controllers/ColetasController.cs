@@ -28,15 +28,19 @@ namespace EcoWaste.Api.Controllers
         }
 
         /// <summary>
-        /// Lista coletas paginadas
+        /// Lista coletas com paginação
         /// </summary>
-        [HttpGet]
-        public async Task<IActionResult> Listar([FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+       [HttpGet]
+        public async Task<IActionResult> Listar([FromQuery] PaginacaoDTO paginacao)
         {
-            var coletas = await _coletaService.ListarAsync(page, pageSize);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var coletas = await _coletaService.ListarAsync(paginacao);
             return Ok(coletas);
         }
-
         /// <summary>
         /// Obtém coletas filtradas por tipo de resíduo
         /// </summary>
@@ -45,6 +49,12 @@ namespace EcoWaste.Api.Controllers
         {
             var coletas = await _coletaService.ObterPorTipoResiduoAsync(tipo);
             return Ok(coletas);
+        }
+
+        [HttpGet("erro-teste")]
+        public IActionResult ForcarErro()
+        {
+            throw new Exception("Este é um erro de teste!");
         }
     }
 }

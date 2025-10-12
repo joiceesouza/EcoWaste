@@ -3,6 +3,7 @@ using EcoWaste.Business.Services;
 using EcoWaste.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using EcoWaste.Api.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +28,7 @@ builder.Services.AddScoped<IPontoColetaService, PontoColetaService>();
 
 
 var app = builder.Build();
+app.UseMiddleware<ExceptionMiddleware>();
 
 // 4. Configure middleware do pipeline HTTP
 if (app.Environment.IsDevelopment())

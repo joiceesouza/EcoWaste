@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using EcoWaste.Core.Entities;
 using EcoWaste.DataAccess;
 using EcoWaste.Core.DTOs;
+using EcoWaste.Core.Extensions;
 
 public class ResiduoService : IResiduoService
 {
@@ -30,5 +31,19 @@ public class ResiduoService : IResiduoService
         _context.Residuos.Add(residuo);
         await _context.SaveChangesAsync();
         return residuo;
+    }
+    public async Task<List<Residuo>> ObterTodosAsync(PaginacaoDTO paginacao)
+    {
+        return await _context.Residuos
+            .Skip((paginacao.Pagina - 1) * paginacao.TamanhoPagina)
+            .Take(paginacao.TamanhoPagina)
+            .ToListAsync();
+    }
+        public async Task<List<Coleta>> ListarAsync(PaginacaoDTO paginacao)
+    {
+        return await _context.Coletas
+            .OrderBy(c => c.Id) // sempre bom ter uma ordenação
+            .Paginar(paginacao)
+            .ToListAsync();
     }
 }

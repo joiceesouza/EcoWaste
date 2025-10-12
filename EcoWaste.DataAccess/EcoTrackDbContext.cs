@@ -11,7 +11,7 @@ namespace EcoWaste.DataAccess
         }
 
         public DbSet<Coleta> Coletas { get; set; }
-        public DbSet<PontoColeta> PontosColeta { get; set; }
+        public DbSet<PontoColeta> PontoColetas { get; set; }  
         public DbSet<Residuo> Residuos { get; set; }
         public DbSet<PontoColetaResiduo> PontoColetaResiduos { get; set; }
 

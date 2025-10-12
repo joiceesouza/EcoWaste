@@ -12,8 +12,8 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace EcoWaste.DataAccess.Migrations
 {
     [DbContext(typeof(EcoTrackDbContext))]
-    [Migration("20250616181810_InicialFake")]
-    partial class InicialFake
+    [Migration("20250616213209_CriacaoTabelasIniciais")]
+    partial class CriacaoTabelasIniciais
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

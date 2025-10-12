@@ -3,6 +3,7 @@ using EcoWaste.Core.Entities;
 using EcoWaste.Core.DTOs;
 using EcoWaste.DataAccess;
 using EcoWaste.Business.Interfaces;
+using EcoWaste.Core.Extensions;
 
 public class ColetaService : IColetaService
 {
@@ -57,4 +58,13 @@ public class ColetaService : IColetaService
                 DataHora = c.DataHora
             }).ToListAsync();
     }
+    public async Task<List<Coleta>> ListarAsync(PaginacaoDTO paginacao)
+    {
+        return await _context.Coletas
+            .Skip((paginacao.Pagina - 1) * paginacao.TamanhoPagina)
+            .Take(paginacao.TamanhoPagina)
+            .Include(c => c.Residuo)
+            .ToListAsync();
+    }
+
 }
