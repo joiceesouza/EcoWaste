@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong@Password123
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlvolume:/var/opt/mssql
+    networks:
+      - ecowaste-network
+
+  ecowaste-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ecowaste-api
+    ports:
+      - "8080:80"
+    depends_on:
+      - sqlserver
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=EcoWasteDb;User Id=sa;Password=YourStrong@Password123;
+    networks:
+      - ecowaste-network
+
+volumes:
+  sqlvolume:
+
+networks:
+  ecowaste-network:
+    driver: bridge
