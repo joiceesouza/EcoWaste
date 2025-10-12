@@ -2,9 +2,9 @@ name: EcoWaste CI/CD
 
 on:
   push:
-    branches: [ feature-joice-ecowaste ]
+    branches: [ main ]
   pull_request:
-    branches: [ feature-joice-ecowaste ]
+    branches: [ main ]
 
 jobs:
   build-test-deploy:
