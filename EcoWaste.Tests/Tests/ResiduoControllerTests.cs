@@ -1,6 +1,8 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using Xunit;
+using Microsoft.AspNetCore.Mvc.Testing;
+using EcoWaste.Api;
 
 namespace EcoWaste.Tests
 {

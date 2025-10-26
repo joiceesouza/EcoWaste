@@ -108,8 +108,3 @@ Instituição: FIAP
 Fase: Navegando pelo Mundo DevOps
 
 Ano: 2025
-
-
-
-
-

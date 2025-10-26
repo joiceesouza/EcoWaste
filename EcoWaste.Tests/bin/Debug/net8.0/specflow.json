@@ -1,0 +1,12 @@
+{
+  "language": {
+    "feature": "pt-BR"
+  },
+  "generator": {
+    "allowDebugGeneratedFiles": true,
+    "allowRowTests": true
+  },
+  "runtime": {
+    "missingOrPendingStepsOutcome": "Inconclusive"
+  }
+}

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "B3k3zvI6ziA=",
+  "dgSpecHash": "gSN5U33xCr8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Joice Fernanda\\Documents\\FIAP\\EcoWaste\\EcoWaste.Core\\EcoWaste.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Joice Fernanda\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.17\\microsoft.netcore.app.ref.8.0.17.nupkg.sha512",
+    "C:\\Users\\Joice Fernanda\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.17\\microsoft.windowsdesktop.app.ref.8.0.17.nupkg.sha512",
+    "C:\\Users\\Joice Fernanda\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.17\\microsoft.aspnetcore.app.ref.8.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
