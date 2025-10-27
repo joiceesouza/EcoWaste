@@ -10,15 +10,16 @@ namespace EcoWaste.DataAccess
         {
         }
 
-        public DbSet<Coleta> Coletas { get; set; }
-        public DbSet<PontoColeta> PontoColetas { get; set; }  
-        public DbSet<Residuo> Residuos { get; set; }
-        public DbSet<PontoColetaResiduo> PontoColetaResiduos { get; set; }
+        public DbSet<Coleta> Coletas { get; set; } = null!;
+        public DbSet<PontoColeta> PontoColetas { get; set; } = null!;
+        public DbSet<Residuo> Residuos { get; set; } = null!;
+        public DbSet<PontoColetaResiduo> PontoColetaResiduos { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
+            // Configuração da entidade Coleta
             modelBuilder.Entity<Coleta>(entity =>
             {
                 entity.ToTable("COLETA");
@@ -33,11 +34,12 @@ namespace EcoWaste.DataAccess
                 entity.Property(e => e.DataHora).HasColumnName("DATA_HORA");
 
                 entity.HasOne(e => e.Residuo)
-                    .WithMany(r => r.Coletas)
-                    .HasForeignKey(e => e.ResiduoId)
-                    .OnDelete(DeleteBehavior.Restrict);
+                      .WithMany(r => r.Coletas)
+                      .HasForeignKey(e => e.ResiduoId)
+                      .OnDelete(DeleteBehavior.Restrict);
             });
 
+            // Configuração da entidade Residuo
             modelBuilder.Entity<Residuo>(entity =>
             {
                 entity.ToTable("RESIDUO");
@@ -49,6 +51,7 @@ namespace EcoWaste.DataAccess
                 entity.Property(e => e.Tipo).HasColumnName("TIPO").IsRequired();
             });
 
+            // Configuração da entidade PontoColeta
             modelBuilder.Entity<PontoColeta>(entity =>
             {
                 entity.ToTable("PONTO_COLETA");
@@ -61,6 +64,7 @@ namespace EcoWaste.DataAccess
                 entity.Property(e => e.Cidade).HasColumnName("CIDADE").IsRequired();
             });
 
+            // Configuração da entidade PontoColetaResiduo (tabela de relacionamento)
             modelBuilder.Entity<PontoColetaResiduo>(entity =>
             {
                 entity.ToTable("PONTO_COLETA_RESIDUO");
@@ -89,24 +93,16 @@ namespace EcoWaste.DataAccess
                 entity.SetTableName(entity.GetTableName().ToUpper());
 
                 foreach (var property in entity.GetProperties())
-                {
-                    property.SetColumnName(property.GetColumnBaseName().ToUpper());
-                }
+                    property.SetColumnName(property.GetColumnName().ToUpper());
 
                 foreach (var key in entity.GetKeys())
-                {
                     key.SetName(key.GetName().ToUpper());
-                }
 
                 foreach (var fk in entity.GetForeignKeys())
-                {
                     fk.SetConstraintName(fk.GetConstraintName().ToUpper());
-                }
 
                 foreach (var index in entity.GetIndexes())
-                {
                     index.SetDatabaseName(index.GetDatabaseName().ToUpper());
-                }
             }
         }
     }

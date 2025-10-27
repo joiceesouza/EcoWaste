@@ -10,6 +10,5 @@ public class Coleta
     public double QuantidadeKg { get; set; }
     public DateTime DataHora { get; set; }
 
-    // Relacionamentos opcionais:
     public Residuo? Residuo { get; set; }
 }

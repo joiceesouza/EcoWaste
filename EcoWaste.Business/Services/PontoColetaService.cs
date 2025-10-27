@@ -24,7 +24,9 @@ namespace EcoWaste.Business.Services
                     Nome = p.Nome,
                     Endereco = p.Endereco,
                     Cidade = p.Cidade,
-                    TiposResiduosAceitos = p.TiposResiduosAceitos.Select(r => r.Nome).ToList()
+                    TiposResiduosAceitos = p.TiposResiduosAceitos
+                    .Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries)
+                    .ToList()
                 }).ToListAsync();
         }
 
